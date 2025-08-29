@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #5e8c61;
-    --secondary-color: #72bda3;
-    --accent-color: #94e8b4;
+    --primary-color: #1c4f6e;
+    --secondary-color: #7295bd;
+    --accent-color: #bfdbfe;
     --text-primary: #1f2937; /* Preto para manter a leitura fácil */
     --text-secondary: #4b5563; /* Cinza escuro para manter a leitura fácil */
     --text-light: #d1d5db;
@@ -162,7 +162,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(45deg, #030001, #098648);
+    background: linear-gradient(45deg, #030001, #134781);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
