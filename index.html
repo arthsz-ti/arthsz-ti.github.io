@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Saraiva - Portfólio</title>
+    <title>Arthur Saraiva — Portfólio</title>
+    <meta name="description" content="Arthur Saraiva — Estagiário de TI na Aumovio, automação de processos (RPA), Python e desenvolvimento de sistemas. Ciência da Computação na UniAnchieta.">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -12,111 +13,113 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="#home">Arthur Saraiva</a>
+                    <a href="#home">arthur.saraiva</a>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sobre" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contato" class="nav-link">Contato</a>
-                    </li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" aria-label="Abrir menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Seção Home -->
+        <!-- Home -->
         <section id="home" class="hero">
-            <div class="hero-container">
+            <div class="container hero-container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Olá, eu sou <span class="highlight">Arthur Saraiva</span></h1>
-                    <p class="hero-subtitle">Estudante de Ciências da Computação</p>
-                    <p class="hero-description">Desenvolvedor em formação, apaixonado por tecnologia, automação e análise de dados.  </p>
+                    <span class="hero-eyebrow">Estagiário de TI · Aumovio</span>
+                    <h1 class="hero-title">Transformo tarefas repetitivas em sistemas que rodam sozinhos.</h1>
+                    <p class="hero-description">Automação de processos (RPA), Python e desenvolvimento de sistemas/aplicações para rotinas de uma metalúrgica multinacional. Atualmente curso o 6º semestre de Ciência da Computação na UniAnchieta.</p>
                     <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
-                        <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+                        <a href="#portfolio" class="btn btn-primary">Ver projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Falar comigo</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
+                        <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="image/profile.png" alt="Arthur Saraiva - Foto de Perfil" class="profile-img">
+                    <div class="plate">
+                        <img src="image/profile.png" alt="Arthur Saraiva" class="profile-img">
+                    </div>
+                    <span class="hero-image-tag">Jundiaí, SP</span>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Sobre -->
+        <!-- Sobre -->
         <section id="sobre" class="about">
             <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-head">
+                    <span class="section-num">01</span>
+                    <h2 class="section-title">Sobre mim</h2>
+                </div>
+
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Sou estudante de Ciências da Computação na UniAnchieta com previsão de formatura em 2027. Atualmente trabalho como Estagiário em TI na Aumovio (spin-off da Continental Automotive), onde desenvolvo soluções em automação, análise de dados e relatórios em Power BI.</p>
-                        
-                        <p>Minha paixão pela tecnologia me levou a explorar diversas áreas, desde desenvolvimento web até automação de processos com UiPath e Python. Tenho experiência prática em projetos que envolvem análise de dados, web scraping e desenvolvimento de algoritmos de machine learning.</p>
+                        <p>Sou estagiário de TI na <strong>Aumovio</strong> (ex-Continental Automotive) desde março de 2025, onde trabalho com automação de processos usando <strong>UiPath</strong> e desenvolvo scripts em <strong>Python</strong> para integração de APIs e processamento de dados. Também dou suporte a sistemas corporativos como SAP, PowerShare e BMC.</p>
+
+                        <p>Construí um portal web em Django com controle de acesso por perfil — usado hoje por todas as plantas da Aumovio no Brasil para centralizar iniciativas de qualquer área (não só automação — o RH, por exemplo, pode usá-lo pra tratar de benefícios), com IA integrada e controle de gerenciamento. Também desenvolvo um projeto de visão computacional para detecção de uso de EPIs e um <strong>dashboard de monitoramento de automações</strong>, integrado via API, onde qualquer usuário pode acompanhar o status das próprias automações, horário de disparo e em qual máquina (hostname) cada uma está rodando.</p>
 
                         <div class="objective">
-                            <h3>Objetivo Profissional</h3>
-                            <p>Aproveitar oportunidades para aplicar e desenvolver meus conhecimentos em tecnologia, contribuindo com soluções inovadoras em análise de dados, automação e desenvolvimento, enquanto amplio minha experiência profissional em um ambiente dinâmico e desafiador.</p>
+                            <h3>Plano de carreira</h3>
+                            <p>Busco oportunidades como Desenvolvedor(a) RPA Júnior ou Analista de Automação, para aplicar e evoluir na prática o que já venho construindo.</p>
                         </div>
                     </div>
-                    
+
                     <div class="skills-section">
-                        <h3>Habilidades Técnicas</h3>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>Linguagens de Programação</h4>
-                                <div class="skills">
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">TypeScript</span>
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                </div>
+                        <div class="skill-category">
+                            <h4>Automação &amp; RPA</h4>
+                            <div class="skills">
+                                <span class="skill-tag">UiPath</span>
+                                <span class="skill-tag">Orchestrator</span>
+                                <span class="skill-tag">N8n</span>
+                                <span class="skill-tag">Selenium</span>
+                                <span class="skill-tag">PyAutoGUI</span>
                             </div>
-                            
-                            <div class="skill-category">
-                                <h4>Ferramentas & Tecnologias</h4>
-                                <div class="skills">
-                                    <span class="skill-tag">Power BI</span>
-                                    <span class="skill-tag">UiPath</span>
-                                    <span class="skill-tag">SAP</span>
-                                    <span class="skill-tag">Excel Avançado</span>
-                                    <span class="skill-tag">SQL Server</span>
-                                </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend &amp; Dados</h4>
+                            <div class="skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">SQL Server</span>
+                                <span class="skill-tag">APIs REST</span>
+                                <span class="skill-tag">Power BI</span>
                             </div>
-                            
-                            <div class="skill-category">
-                                <h4>Soft Skills</h4>
-                                <div class="skills">
-                                    <span class="skill-tag">Comunicação</span>
-                                    <span class="skill-tag">Trabalho em Equipe</span>
-                                    <span class="skill-tag">Proatividade</span>
-                                    <span class="skill-tag">Adaptabilidade</span>
-                                    <span class="skill-tag">Organização</span>
-                                </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skills">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Inteligência Artificial</h4>
+                            <div class="skills">
+                                <span class="skill-tag">Agentes de IA</span>
+                                <span class="skill-tag">Integração via API</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Sistemas corporativos</h4>
+                            <div class="skills">
+                                <span class="skill-tag">SAP</span>
+                                <span class="skill-tag">PowerShare</span>
+                                <span class="skill-tag">BMC</span>
                             </div>
                         </div>
                     </div>
@@ -124,34 +127,45 @@
 
                 <div class="experience-education">
                     <div class="experience">
-                        <h3>Experiência Profissional</h3>
+                        <h3>Experiência</h3>
                         <div class="timeline-item">
-                            <div class="timeline-date">Março 2025 - Presente</div>
+                            <div class="timeline-date">Março 2025 — Atual</div>
                             <div class="timeline-content">
-                                <h4>Estagiário em TI - Aumovio</h4>
-                                <ul>
-                                    <li>Automação de processos utilizando UiPath</li>
-                                    <li>Desenvolvimento de scripts em Python para automação de processos</li>
-                                    <li>Suporte na administração e operação de sistemas corporativos (SAP, BMC, PowerShare)</li>
-                                    <li>Desenvolvimento de relatórios e dashboards em Power BI</li>
-                                    <li>Manipulação e análise de dados em Excel</li>
-                                    <li>Participação em projetos de melhoria contínua na área de TI</li>
-                                </ul>
+                                <h4>Estagiário de TI</h4>
+                                <p class="role-loc">Aumovio (ex-Continental Automotive) · Várzea Paulista, SP</p>
+
+                                <div class="exp-group">
+                                    <h5>Automação &amp; suporte</h5>
+                                    <ul>
+                                        <li>Desenvolvo e monitoro automações RPA em UiPath via Orchestrator</li>
+                                        <li>Dou suporte a sistemas corporativos e participo de projetos de migração e gestão de acessos</li>
+                                    </ul>
+                                </div>
+
+                                <div class="exp-group">
+                                    <h5>Desenvolvimento de sistemas</h5>
+                                    <ul>
+                                        <li>Construí do zero um portal web (Django) com controle de acesso por perfil, com o objetivo de centralizar num único portal as iniciativas de qualquer área (não só automação), com IA integrada e controle de gerenciamento — hoje usado por todas as plantas da Aumovio no Brasil</li>
+                                        <li>Integrei um agente de IA a esse portal para apoiar geração de conteúdo e análises</li>
+                                        <li>Desenvolvo um projeto de visão computacional para detecção de EPIs</li>
+                                        <li>Construí um dashboard de monitoramento de automações, integrado via API, onde qualquer usuário acompanha status, horário de disparo e a máquina (hostname) de cada automação</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="education">
-                        <h3>Formação Acadêmica</h3>
+                        <h3>Formação</h3>
                         <div class="timeline-item">
-                            <div class="timeline-date">2024 - 2027</div>
+                            <div class="timeline-date">2024 — 2027 (em andamento)</div>
                             <div class="timeline-content">
                                 <h4>Bacharelado em Ciências da Computação</h4>
-                                <p>UniAnchieta</p>
+                                <p>UniAnchieta · 6º semestre</p>
                             </div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-date">2023</div>
+                            <div class="timeline-date">2022 — 2023</div>
                             <div class="timeline-content">
                                 <h4>Curso Técnico em Administração</h4>
                                 <p>ETECVAV</p>
@@ -159,55 +173,143 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="courses-list">
+                    <h3>Cursos &amp; certificações</h3>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <span class="course-name">RPA Automação com Python</span>
+                            <span class="course-org">Udemy · fev 2026</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Conceitos Básicos de Redes</span>
+                            <span class="course-org">Cisco · nov 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Academia Guepardo TAX in Company</span>
+                            <span class="course-org">NTT DATA Business Solutions · out 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Windows Server Hyper-V and Virtualization</span>
+                            <span class="course-org">Microsoft · set 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Introduction to Packet Tracer Exam</span>
+                            <span class="course-org">Cisco · set 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Power BI e SQL Server</span>
+                            <span class="course-org">Udemy · ago 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Algoritmos e Lógica de Programação</span>
+                            <span class="course-org">Udemy · mai 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">RPA Developer Foundation</span>
+                            <span class="course-org">UiPath · abr 2025</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Fundamentos Python 1</span>
+                            <span class="course-org">Senai · jun 2024</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Power Business Intelligence &amp; Microsoft Excel</span>
+                            <span class="course-org">InterNews Jundiaí · abr 2023</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Excel Completo</span>
+                            <span class="course-org">Senai São Paulo · set 2022</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Marketing Digital e Vendas em Redes Sociais</span>
+                            <span class="course-org">Senac São Paulo · dez 2021</span>
+                        </div>
+                        <div class="course-card">
+                            <span class="course-name">Hardware, Redes, Notebooks e Dispositivos Móveis</span>
+                            <span class="course-org">Microlins · jun 2021</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Seção Portfólio -->
+        <!-- Portfólio -->
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2 class="section-title">Meus Projetos</h2>
+                <div class="section-head">
+                    <span class="section-num">02</span>
+                    <h2 class="section-title">Projetos</h2>
+                </div>
+
+                <span class="featured-tag">Em destaque — Hackathons UniAnchieta</span>
+                <div class="featured-grid">
+                    <div class="featured-card plate">
+                        <div class="featured-shot">
+                            <img src="image/acadia-screenshot.png" alt="Painéis do AcadIA: avaliação geral da turma e avaliação individual dos alunos">
+                        </div>
+                        <span class="hackathon-badge">Hackathon 2025</span>
+                        <h3>AcadIA — Personalização Educacional com IA</h3>
+                        <p>Contribuí no desenvolvimento do AcadIA, plataforma que apoia o professor com dados reais de desempenho da turma, coletados automaticamente a cada quiz aplicado. Com o painel, o professor pode:</p>
+                        <ul>
+                            <li>Acompanhar tendências de desempenho da turma por quiz (taxa de acerto, tempo médio, participação)</li>
+                            <li>Identificar automaticamente alunos em risco de baixo rendimento</li>
+                            <li>Ver o progresso individual de cada aluno, com histórico e detalhes</li>
+                            <li>Enviar mensagens diretamente ao aluno pelo painel</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Inteligência Artificial</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Educação</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-card plate">
+                        <div class="featured-shot">
+                            <img src="image/valores-imobiliarios-pitch.png" alt="Slide de pitch do projeto Valores Imobiliários, equipe CTRL+ALT+DEFEAT">
+                        </div>
+                        <span class="hackathon-badge">Hackathon 2024</span>
+                        <h3>CTRL + ALT + DEFEAT – Valores Imobiliários</h3>
+                        <p>Desafio de estimar valores imobiliários no município, com a Prefeitura de Jundiaí. Na equipe <strong>CTRL+ALT+DEFEAT</strong>, criamos um app que agrega dados de sites de imóveis para analisar o mercado local. Com ele, o usuário pode:</p>
+                        <ul>
+                            <li>Verificar o preço médio de imóveis por rua e o valor médio do metro quadrado</li>
+                            <li>Consultar o número de imóveis à venda numa área específica</li>
+                            <li>Comparar categorias de imóvel (residencial ou comercial)</li>
+                            <li>Ver detalhes internos, como quantidade de salas e banheiros</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Análise de Dados</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Setor Público</span>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="featured-tag">Outros projetos</span>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="image/hackathon.jpg" alt="Hackathon Valores Imobiliários">
+                            <img src="image/cadastro.png" alt="Previsão de Nota de Crédito">
                         </div>
                         <div class="project-content">
-                            <h3>Hackathon - Valores Imobiliários</h3>
-                            <p>Participação no evento realizado na UniAnchieta para a Prefeitura de Jundiaí, desenvolvendo soluções para análise de valores imobiliários.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Análise de Dados</span>
-                                <span class="tag">Hackathon</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="image/credit-prediction.jpg" alt="Previsão de Nota de Crédito">
-                        </div>
-                        <div class="project-content">
-                            <h3>Previsão de Nota de Crédito (IA)</h3>
-                            <p>Desenvolvimento de algoritmos (Random Forest e KNN) para prever avaliação de crédito de clientes usando machine learning.</p>
+                            <h3>Previsão de Nota de Crédito</h3>
+                            <p>Algoritmos de Random Forest e KNN para prever a avaliação de crédito de clientes.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">Machine Learning</span>
-                                <span class="tag">Random Forest</span>
-                                <span class="tag">KNN</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="image/churn-analysis.jpg" alt="Análise de Churn">
+                            <img src="image/churn.png" alt="Análise de Churn">
                         </div>
                         <div class="project-content">
                             <h3>Análise de Churn</h3>
-                            <p>Identificação de causas de cancelamento de clientes usando Python e técnicas avançadas de análise de dados.</p>
+                            <p>Identificação de causas de cancelamento de clientes com Python e análise de dados.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
-                                <span class="tag">Análise de Dados</span>
                                 <span class="tag">Pandas</span>
                             </div>
                         </div>
@@ -215,45 +317,56 @@
 
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="image/web-scraping.jpg" alt="Web Scraping Criptomoedas">
+                            <img src="image/web_scraping.png" alt="Web Scraping — Criptomoedas">
                         </div>
                         <div class="project-content">
-                            <h3>Web Scraping - Criptomoedas</h3>
-                            <p>Sistema de coleta automatizada de dados de criptomoedas utilizando Selenium para análise de mercado.</p>
+                            <h3>Web Scraping — Criptomoedas</h3>
+                            <p>Coleta automatizada de dados de criptomoedas com Selenium para análise de mercado.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">Selenium</span>
-                                <span class="tag">Web Scraping</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="image/movie-data.jpg" alt="Extração de Dados Filmes">
+                            <img src="image/extracao_dados.png" alt="Extração de Dados — Filmes">
                         </div>
                         <div class="project-content">
-                            <h3>Extração de Dados - Filmes</h3>
-                            <p>Raspagem e organização de dados de filmes com Python, criando base de dados estruturada para análises.</p>
+                            <h3>Extração de Dados — Filmes</h3>
+                            <p>Raspagem e organização de dados de filmes com Python, gerando uma base estruturada.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">Web Scraping</span>
-                                <span class="tag">Data Mining</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="image/automation.jpg" alt="Automação">
+                            <img src="image/automation.jpg" alt="Bot de Cadastro de Produtos">
                         </div>
                         <div class="project-content">
-                            <h3>Automação de Processos</h3>
-                            <p>Desenvolvimento de bots para cadastro de produtos e automação de e-mails, além de processamento de PDFs.</p>
+                            <h3>Bot de Cadastro de Produtos</h3>
+                            <p>Automação de cadastros em massa com PyAutoGUI, imitando a interação humana em sistemas sem API disponível.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">PyAutoGUI</span>
-                                <span class="tag">Automação</span>
+                                <span class="tag">RPA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="image/email-pdf-automation.png" alt="Automação de E-mails e PDFs">
+                        </div>
+                        <div class="project-content">
+                            <h3>Automação de E-mails e PDFs</h3>
+                            <p>Scripts em Python para envio automático de e-mails e para extração e manipulação de dados em arquivos PDF.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
                                 <span class="tag">RPA</span>
                             </div>
                         </div>
@@ -262,15 +375,18 @@
             </div>
         </section>
 
-        <!-- Seção Contato -->
+        <!-- Contato -->
         <section id="contato" class="contact">
             <div class="container">
-                <h2 class="section-title">Entre em Contato</h2>
+                <div class="section-head">
+                    <span class="section-num">03</span>
+                    <h2 class="section-title">Contato</h2>
+                </div>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Vamos conversar!</h3>
-                        <p>Estou sempre aberto a novas oportunidades e colaborações. Entre em contato comigo através dos canais abaixo:</p>
-                        
+                        <h3>Vamos conversar</h3>
+                        <p>Estou aberto a oportunidades como Desenvolvedor(a) RPA Júnior ou Analista de Automação. Entre em contato por qualquer um dos canais abaixo.</p>
+
                         <div class="contact-items">
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
@@ -279,7 +395,6 @@
                                     <a href="mailto:arthursaraiva51@gmail.com">arthursaraiva51@gmail.com</a>
                                 </div>
                             </div>
-                            
                             <div class="contact-item">
                                 <i class="fas fa-phone"></i>
                                 <div>
@@ -287,7 +402,6 @@
                                     <a href="tel:+5511950330880">(11) 95033-0880</a>
                                 </div>
                             </div>
-                            
                             <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
@@ -295,7 +409,6 @@
                                     <p>Jundiaí, SP</p>
                                 </div>
                             </div>
-                            
                             <div class="contact-item">
                                 <i class="fab fa-linkedin"></i>
                                 <div>
@@ -303,7 +416,6 @@
                                     <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank">arthur-saraiva-ti</a>
                                 </div>
                             </div>
-                            
                             <div class="contact-item">
                                 <i class="fab fa-github"></i>
                                 <div>
@@ -313,56 +425,42 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Nome</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Assunto</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                        </form>
-                    </div>
+
+                    <form id="contactForm" class="contact-form plate">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Arthur Saraiva. Todos os direitos reservados.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+        <div class="container footer-content">
+            <p>© 2026 Arthur Saraiva</p>
+            <div class="footer-social">
+                <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
