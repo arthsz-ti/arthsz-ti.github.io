@@ -123,7 +123,7 @@ if (contactForm) {
             if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || 'Falha no envio');
 
             contactForm.reset();
-            setStatus('success', '<i class="fas fa-circle-check" aria-hidden="true"></i> Mensagem enviada! Obrigado pelo contato — retorno em breve.');
+            setStatus('success', '<i class="fas fa-circle-check" aria-hidden="true"></i> Mensagem enviada! Obrigado pelo contato, retorno em breve.');
         } catch (err) {
             setStatus('error', `Não foi possível enviar agora. <a href="${mailtoFallback(data)}">Enviar pelo seu app de email</a> ou escreva para ${CONTACT_EMAIL}.`);
         } finally {
