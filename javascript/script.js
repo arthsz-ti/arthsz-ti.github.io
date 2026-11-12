@@ -7,7 +7,8 @@ function setMenu(open) {
     hamburger.classList.toggle('active', open);
     navMenu.classList.toggle('active', open);
     hamburger.setAttribute('aria-expanded', String(open));
-    hamburger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    const en = document.documentElement.lang.startsWith('en');
+    hamburger.setAttribute('aria-label', open ? (en ? 'Close menu' : 'Fechar menu') : (en ? 'Open menu' : 'Abrir menu'));
 }
 
 hamburger.addEventListener('click', () => setMenu(!navMenu.classList.contains('active')));
@@ -55,6 +56,24 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Textos do formulário nos dois idiomas
+const IS_EN = document.documentElement.lang.toLowerCase().startsWith('en');
+const T = IS_EN ? {
+    invalid: 'Please fill in all fields with a valid email.',
+    sending: 'Sending…',
+    send: 'Send message',
+    ok: 'Message sent! Thanks for reaching out, I will get back to you soon.',
+    fail: (link, mail) => `Couldn't send right now. <a href="${link}">Send it from your email app</a> or write to ${mail}.`,
+    subjectPrefix: '[Portfolio EN]',
+} : {
+    invalid: 'Preencha todos os campos com um email válido.',
+    sending: 'Enviando…',
+    send: 'Enviar mensagem',
+    ok: 'Mensagem enviada! Obrigado pelo contato, retorno em breve.',
+    fail: (link, mail) => `Não foi possível enviar agora. <a href="${link}">Enviar pelo seu app de email</a> ou escreva para ${mail}.`,
+    subjectPrefix: '[Portfólio]',
+};
+
 // Formulário de contato — envia de verdade via FormSubmit (sem backend)
 const CONTACT_EMAIL = 'arthursaraiva51@gmail.com';
 const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
@@ -84,7 +103,7 @@ if (contactForm) {
             if (!ok && !firstInvalid) firstInvalid = field;
         });
         if (firstInvalid) {
-            setStatus('error', 'Preencha todos os campos com um email válido.');
+            setStatus('error', T.invalid);
             firstInvalid.focus();
             return;
         }
@@ -101,7 +120,7 @@ if (contactForm) {
 
         submitBtn.disabled = true;
         submitBtn.classList.add('loading');
-        btnLabel.textContent = 'Enviando…';
+        btnLabel.textContent = T.sending;
         setStatus('', '');
 
         try {
@@ -112,7 +131,7 @@ if (contactForm) {
                     name: data.name,
                     email: data.email,
                     _replyto: data.email,
-                    _subject: `[Portfólio] ${data.subject}`,
+                    _subject: `${T.subjectPrefix} ${data.subject}`,
                     assunto: data.subject,
                     mensagem: data.message,
                     _template: 'table',
@@ -123,13 +142,13 @@ if (contactForm) {
             if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || 'Falha no envio');
 
             contactForm.reset();
-            setStatus('success', '<i class="fas fa-circle-check" aria-hidden="true"></i> Mensagem enviada! Obrigado pelo contato, retorno em breve.');
+            setStatus('success', `<i class="fas fa-circle-check" aria-hidden="true"></i> ${T.ok}`);
         } catch (err) {
-            setStatus('error', `Não foi possível enviar agora. <a href="${mailtoFallback(data)}">Enviar pelo seu app de email</a> ou escreva para ${CONTACT_EMAIL}.`);
+            setStatus('error', T.fail(mailtoFallback(data), CONTACT_EMAIL));
         } finally {
             submitBtn.disabled = false;
             submitBtn.classList.remove('loading');
-            btnLabel.textContent = 'Enviar mensagem';
+            btnLabel.textContent = T.send;
         }
     });
 
