@@ -1019,6 +1019,13 @@ footer {
 .languages .lang-level { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-dim); }
 
 .skill-tag { transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; }
+.skill-learning { border-style: dashed; }
+.skill-learning em {
+    font-style: normal;
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-left: 0.3rem;
+}
 .skill-tag:hover { border-color: var(--accent); color: var(--accent); background: #fff; }
 
 .course-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
