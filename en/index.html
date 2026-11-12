@@ -6,6 +6,8 @@
     <title>Arthur Saraiva — RPA &amp; Automation Developer</title>
     <meta name="description" content="Arthur Saraiva — IT Intern at Aumovio. Process automation (RPA) with UiPath, Python and systems development. Computer Science student at UniAnchieta.">
     <meta name="theme-color" content="#0F2438">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formsubmit.co; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Arthur Saraiva — RPA &amp; Automation Developer">
@@ -21,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <link href="../css/style.css?v=4" rel="stylesheet">
+    <link href="../vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css?v=5" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#about">Skip to content</a>
@@ -592,20 +594,20 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+                                <input type="text" id="name" name="name" maxlength="100" autocomplete="name" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+                                <input type="email" id="email" name="email" maxlength="150" autocomplete="email" placeholder="you@company.com" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="e.g. RPA Developer position" required>
+                            <input type="text" id="subject" name="subject" maxlength="150" placeholder="e.g. RPA Developer position" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about the opportunity or project" required></textarea>
+                            <textarea id="message" name="message" maxlength="3000" rows="5" placeholder="Tell me a bit about the opportunity or project" required></textarea>
                         </div>
                         <!-- hidden anti-spam field -->
                         <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -632,6 +634,6 @@
         </div>
     </footer>
 
-    <script src="../javascript/script.js?v=4"></script>
+    <script src="../javascript/script.js?v=5"></script>
 </body>
 </html>

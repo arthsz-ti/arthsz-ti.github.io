@@ -6,6 +6,8 @@
     <title>Arthur Saraiva — Desenvolvedor RPA &amp; Automação</title>
     <meta name="description" content="Arthur Saraiva — Estagiário de TI na Aumovio. Automação de processos (RPA) com UiPath, Python e desenvolvimento de sistemas. Ciência da Computação na UniAnchieta.">
     <meta name="theme-color" content="#0F2438">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formsubmit.co; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Arthur Saraiva — Desenvolvedor RPA &amp; Automação">
@@ -21,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css?v=4" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css?v=5" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
@@ -592,20 +594,20 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Nome</label>
-                                <input type="text" id="name" name="name" autocomplete="name" placeholder="Seu nome" required>
+                                <input type="text" id="name" name="name" maxlength="100" autocomplete="name" placeholder="Seu nome" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@empresa.com" required>
+                                <input type="email" id="email" name="email" maxlength="150" autocomplete="email" placeholder="voce@empresa.com" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" placeholder="Ex.: Vaga de Desenvolvedor RPA" required>
+                            <input type="text" id="subject" name="subject" maxlength="150" placeholder="Ex.: Vaga de Desenvolvedor RPA" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre a oportunidade ou o projeto" required></textarea>
+                            <textarea id="message" name="message" maxlength="3000" rows="5" placeholder="Conte um pouco sobre a oportunidade ou o projeto" required></textarea>
                         </div>
                         <!-- campo invisível anti-spam -->
                         <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -632,6 +634,6 @@
         </div>
     </footer>
 
-    <script src="javascript/script.js?v=4"></script>
+    <script src="javascript/script.js?v=5"></script>
 </body>
 </html>

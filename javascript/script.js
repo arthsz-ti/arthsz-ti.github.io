@@ -60,6 +60,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 const IS_EN = document.documentElement.lang.toLowerCase().startsWith('en');
 const T = IS_EN ? {
     invalid: 'Please fill in all fields with a valid email.',
+    wait: (s) => `Please wait ${s}s before sending another message.`,
     sending: 'Sending…',
     send: 'Send message',
     ok: 'Message sent! Thanks for reaching out, I will get back to you soon.',
@@ -67,6 +68,7 @@ const T = IS_EN ? {
     subjectPrefix: '[Portfolio EN]',
 } : {
     invalid: 'Preencha todos os campos com um email válido.',
+    wait: (s) => `Aguarde ${s}s para enviar outra mensagem.`,
     sending: 'Enviando…',
     send: 'Enviar mensagem',
     ok: 'Mensagem enviada! Obrigado pelo contato, retorno em breve.',
@@ -76,7 +78,10 @@ const T = IS_EN ? {
 
 // Formulário de contato — envia de verdade via FormSubmit (sem backend)
 const CONTACT_EMAIL = 'arthursaraiva51@gmail.com';
-const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+// Código do FormSubmit no lugar do email: o endereço não fica exposto no envio
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/e546855f64e0d8c4de09e66a1c1ea5c0';
+const COOLDOWN_MS = 60 * 1000; // 1 envio por minuto por navegador
+const COOLDOWN_KEY = 'contact-last-sent';
 
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
@@ -111,6 +116,16 @@ if (contactForm) {
         const fd = new FormData(contactForm);
         if (fd.get('_honey')) return; // bot
 
+        // limite de envios: evita spam e cliques repetidos
+        let last = 0;
+        try { last = Number(localStorage.getItem(COOLDOWN_KEY)) || 0; } catch (_) {}
+        const remaining = COOLDOWN_MS - (Date.now() - last);
+        if (remaining > 0) {
+            setStatus('error', T.wait(Math.ceil(remaining / 1000)));
+            return;
+        }
+        if (submitBtn.disabled) return;
+
         const data = {
             name: fd.get('name').trim(),
             email: fd.get('email').trim(),
@@ -141,9 +156,10 @@ if (contactForm) {
             const json = await res.json().catch(() => ({}));
             if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || 'Falha no envio');
 
+            try { localStorage.setItem(COOLDOWN_KEY, String(Date.now())); } catch (_) {}
             contactForm.reset();
             setStatus('success', `<i class="fas fa-circle-check" aria-hidden="true"></i> ${T.ok}`);
-        } catch (err) {
+        } catch {
             setStatus('error', T.fail(mailtoFallback(data), CONTACT_EMAIL));
         } finally {
             submitBtn.disabled = false;
