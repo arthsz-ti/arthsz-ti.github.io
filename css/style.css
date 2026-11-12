@@ -641,6 +641,23 @@ section { padding: 6.5rem 0; }
 .project-card:hover .project-image img { transform: scale(1.04); }
 .project-content { display: flex; flex-direction: column; flex: 1; }
 .project-content .project-tags { margin-top: auto; }
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+}
+.project-link .fa-arrow-up-right-from-square { font-size: 0.65rem; color: var(--accent); }
+.project-link:hover { color: var(--accent); }
 .project-icon {
     width: 36px;
     height: 36px;
