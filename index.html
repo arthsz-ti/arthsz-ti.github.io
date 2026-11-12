@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Saraiva — Portfólio</title>
-    <meta name="description" content="Arthur Saraiva — Estagiário de TI na Aumovio, automação de processos (RPA), Python e desenvolvimento de sistemas. Ciência da Computação na UniAnchieta.">
+    <title>Arthur Saraiva — Desenvolvedor RPA &amp; Automação</title>
+    <meta name="description" content="Arthur Saraiva — Estagiário de TI na Aumovio. Automação de processos (RPA) com UiPath, Python e desenvolvimento de sistemas. Ciência da Computação na UniAnchieta.">
+    <meta name="theme-color" content="#0F2438">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arthur Saraiva — Desenvolvedor RPA &amp; Automação">
+    <meta property="og:description" content="Automação de processos com UiPath e Python, e sistemas web em Django e Flask.">
+    <meta property="og:url" content="https://arthsz-ti.github.io/">
+    <meta property="og:image" content="https://arthsz-ti.github.io/image/profile.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F2438'/%3E%3Cpath d='M8 8h14v4H12v10H8zM56 56H42v-4h10V42h4z' fill='%23C1701F'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23EEF1F4' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="#home">arthur.saraiva</a>
+                    <a href="#home"><span class="logo-mark">AS</span>arthur.saraiva</a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link">Projetos</a></li>
                     <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    <li class="nav-item nav-cta-item">
+                        <a href="docs/curriculo-arthur-saraiva.pdf" class="nav-cta" download>
+                            <i class="fas fa-arrow-down" aria-hidden="true"></i> Currículo
+                        </a>
+                    </li>
                 </ul>
-                <button class="hamburger" aria-label="Abrir menu">
+                <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -35,55 +56,88 @@
         <section id="home" class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
+                    <span class="status-badge"><span class="status-dot"></span>Aberto a oportunidades</span>
                     <span class="hero-eyebrow">Estagiário de TI · Aumovio</span>
                     <h1 class="hero-title">Transformo tarefas repetitivas em sistemas que rodam sozinhos.</h1>
-                    <p class="hero-description">Automação de processos (RPA), Python e desenvolvimento de sistemas/aplicações para rotinas de uma metalúrgica multinacional. Atualmente curso o 6º semestre de Ciência da Computação na UniAnchieta.</p>
+                    <p class="hero-description">Automação de processos (RPA) com UiPath, Python e desenvolvimento de sistemas para rotinas de uma metalúrgica multinacional. Atualmente curso o 6º semestre de Ciência da Computação na UniAnchieta.</p>
                     <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">Ver projetos</a>
-                        <a href="#contato" class="btn btn-secondary">Falar comigo</a>
+                        <a href="#portfolio" class="btn btn-primary">Ver projetos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="docs/curriculo-arthur-saraiva.pdf" class="btn btn-secondary" download><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Baixar currículo</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/arthsz-ti" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="plate">
-                        <img src="image/profile.png" alt="Arthur Saraiva" class="profile-img">
+                        <img src="image/profile.png" alt="Arthur Saraiva" class="profile-img" width="400" height="400">
                     </div>
-                    <span class="hero-image-tag">Jundiaí, SP</span>
+                    <span class="hero-image-tag"><i class="fas fa-location-dot" aria-hidden="true"></i> Jundiaí, SP</span>
                 </div>
+            </div>
+
+            <div class="container">
+                <dl class="hero-facts">
+                    <div class="fact">
+                        <dt>Atuação</dt>
+                        <dd>RPA &amp; Automação</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Stack principal</dt>
+                        <dd>UiPath · Python</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Na Aumovio</dt>
+                        <dd>Desde mar/2025</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Formação</dt>
+                        <dd>Ciência da Computação</dd>
+                    </div>
+                </dl>
             </div>
         </section>
 
         <!-- Sobre -->
         <section id="sobre" class="about">
             <div class="container">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="section-num">01</span>
                     <h2 class="section-title">Sobre mim</h2>
                 </div>
 
                 <div class="about-content">
-                    <div class="about-text">
-                        <p>Sou estagiário de TI na <strong>Aumovio</strong> (ex-Continental Automotive) desde março de 2025, onde trabalho com automação de processos usando <strong>UiPath</strong> e desenvolvo scripts em <strong>Python</strong> para integração de APIs e processamento de dados. Também dou suporte a sistemas corporativos como SAP, PowerShare e BMC.</p>
+                    <div class="about-text reveal">
+                        <p>Sou estagiário de TI na <strong>Aumovio</strong> (spin-off da Continental Automotive) desde março de 2025. Desenvolvo e sustento automações em <strong>UiPath</strong> estruturadas em REFramework, do levantamento do processo à implantação, e escrevo scripts em <strong>Python</strong> para integração de APIs e processamento de dados. Também dou suporte a sistemas corporativos como SAP, PowerShare e BMC.</p>
 
-                        <p>Construí um portal web em Django com controle de acesso por perfil — usado hoje por todas as plantas da Aumovio no Brasil para centralizar iniciativas de qualquer área (não só automação — o RH, por exemplo, pode usá-lo pra tratar de benefícios), com IA integrada e controle de gerenciamento. Também desenvolvo um projeto de visão computacional para detecção de uso de EPIs e um <strong>dashboard de monitoramento de automações</strong>, integrado via API, onde qualquer usuário pode acompanhar o status das próprias automações, horário de disparo e em qual máquina (hostname) cada uma está rodando.</p>
+                        <p>Construí um portal web em Django com controle de acesso por perfil — usado hoje por todas as plantas no Brasil para centralizar iniciativas de qualquer área (não só automação — o RH, por exemplo, pode usá-lo pra tratar de benefícios), com IA integrada e controle de gerenciamento. Também desenvolvi um <strong>dashboard de monitoramento de automações</strong> em Flask, integrado via API ao UiPath Orchestrator, e trabalho num projeto de visão computacional para detecção de uso de EPIs.</p>
 
                         <div class="objective">
                             <h3>Plano de carreira</h3>
                             <p>Busco oportunidades como Desenvolvedor(a) RPA Júnior ou Analista de Automação, para aplicar e evoluir na prática o que já venho construindo.</p>
                         </div>
+
+                        <div class="languages">
+                            <h3>Idiomas</h3>
+                            <ul>
+                                <li><span>Português</span><em>Nativo</em></li>
+                                <li><span>Inglês</span><em>Profissional</em></li>
+                                <li><span>Italiano</span><em>Em estudo</em></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="skills-section">
+                    <div class="skills-section reveal">
                         <div class="skill-category">
                             <h4>Automação &amp; RPA</h4>
                             <div class="skills">
-                                <span class="skill-tag">UiPath</span>
+                                <span class="skill-tag">UiPath Studio</span>
                                 <span class="skill-tag">Orchestrator</span>
+                                <span class="skill-tag">REFramework</span>
                                 <span class="skill-tag">N8n</span>
+                                <span class="skill-tag">Knime</span>
                                 <span class="skill-tag">Selenium</span>
                                 <span class="skill-tag">PyAutoGUI</span>
                             </div>
@@ -93,9 +147,13 @@
                             <div class="skills">
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">Pandas</span>
                                 <span class="skill-tag">SQL Server</span>
                                 <span class="skill-tag">APIs REST</span>
+                                <span class="skill-tag">JSON / XML</span>
                                 <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Git</span>
                             </div>
                         </div>
                         <div class="skill-category">
@@ -112,6 +170,7 @@
                             <div class="skills">
                                 <span class="skill-tag">Agentes de IA</span>
                                 <span class="skill-tag">Integração via API</span>
+                                <span class="skill-tag">Visão computacional</span>
                             </div>
                         </div>
                         <div class="skill-category">
@@ -126,36 +185,45 @@
                 </div>
 
                 <div class="experience-education">
-                    <div class="experience">
+                    <div class="experience reveal">
                         <h3>Experiência</h3>
                         <div class="timeline-item">
                             <div class="timeline-date">Março 2025 — Atual</div>
                             <div class="timeline-content">
                                 <h4>Estagiário de TI</h4>
-                                <p class="role-loc">Aumovio (ex-Continental Automotive) · Várzea Paulista, SP</p>
+                                <p class="role-loc">Aumovio (spin-off da Continental Automotive) · Várzea Paulista, SP</p>
 
                                 <div class="exp-group">
-                                    <h5>Automação &amp; suporte</h5>
+                                    <h5>Automação RPA</h5>
                                     <ul>
-                                        <li>Desenvolvo e monitoro automações RPA em UiPath via Orchestrator</li>
-                                        <li>Dou suporte a sistemas corporativos e participo de projetos de migração e gestão de acessos</li>
+                                        <li>Desenvolvo, executo e monitoro automações attended e unattended em UiPath Studio e Orchestrator, estruturadas em REFramework com tratamento de exceções e logging</li>
+                                        <li>Cubro o ciclo completo: levantamento do processo, desenvolvimento, testes, homologação, implantação e sustentação</li>
+                                        <li>Faço a análise de processos junto às áreas de negócio e elaboro a documentação técnica (PDD e SDD)</li>
                                     </ul>
                                 </div>
 
                                 <div class="exp-group">
                                     <h5>Desenvolvimento de sistemas</h5>
                                     <ul>
-                                        <li>Construí do zero um portal web (Django) com controle de acesso por perfil, com o objetivo de centralizar num único portal as iniciativas de qualquer área (não só automação), com IA integrada e controle de gerenciamento — hoje usado por todas as plantas da Aumovio no Brasil</li>
+                                        <li>Construí do zero um portal web (Django) com controle de acesso por perfil, com o objetivo de centralizar num único portal as iniciativas de qualquer área (não só automação), com IA integrada e controle de gerenciamento — hoje usado por todas as plantas no Brasil</li>
                                         <li>Integrei um agente de IA a esse portal para apoiar geração de conteúdo e análises</li>
+                                        <li>Desenvolvi um dashboard de monitoramento de automações em Python (Flask) e SQL Server, integrado via REST API ao UiPath Orchestrator, que mostra status, execuções, falhas, horário de disparo e a máquina (hostname) de cada robô</li>
+                                        <li>Desenvolvi uma aplicação web em Django para monitoramento e planejamento de materiais, com KPIs de risco de cobertura, filtros, controle de acesso por perfil e envio de follow-ups, integrada a dados do SAP</li>
                                         <li>Desenvolvo um projeto de visão computacional para detecção de EPIs</li>
-                                        <li>Construí um dashboard de monitoramento de automações, integrado via API, onde qualquer usuário acompanha status, horário de disparo e a máquina (hostname) de cada automação</li>
+                                    </ul>
+                                </div>
+
+                                <div class="exp-group">
+                                    <h5>Suporte &amp; infraestrutura</h5>
+                                    <ul>
+                                        <li>Dou suporte a sistemas corporativos (SAP, PowerShare e BMC) e atuo em projetos de migração de usuários e gestão de acessos, em ambiente multinacional</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="education">
+                    <div class="education reveal">
                         <h3>Formação</h3>
                         <div class="timeline-item">
                             <div class="timeline-date">2024 — 2027 (em andamento)</div>
@@ -174,9 +242,13 @@
                     </div>
                 </div>
 
-                <div class="courses-list">
+                <div class="courses-list reveal">
                     <h3>Cursos &amp; certificações</h3>
                     <div class="courses-grid">
+                        <div class="course-card course-current">
+                            <span class="course-name">Desenvolvimento Web Completo</span>
+                            <span class="course-org">Udemy · cursando</span>
+                        </div>
                         <div class="course-card">
                             <span class="course-name">RPA Automação com Python</span>
                             <span class="course-org">Udemy · fev 2026</span>
@@ -222,6 +294,10 @@
                             <span class="course-org">Senai São Paulo · set 2022</span>
                         </div>
                         <div class="course-card">
+                            <span class="course-name">Como Falar em Público</span>
+                            <span class="course-org">Senac · 2022</span>
+                        </div>
+                        <div class="course-card">
                             <span class="course-name">Marketing Digital e Vendas em Redes Sociais</span>
                             <span class="course-org">Senac São Paulo · dez 2021</span>
                         </div>
@@ -237,16 +313,16 @@
         <!-- Portfólio -->
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="section-num">02</span>
                     <h2 class="section-title">Projetos</h2>
                 </div>
 
                 <span class="featured-tag">Em destaque — Hackathons UniAnchieta</span>
                 <div class="featured-grid">
-                    <div class="featured-card plate">
+                    <article class="featured-card plate reveal">
                         <div class="featured-shot">
-                            <img src="image/acadia-screenshot.png" alt="Painéis do AcadIA: avaliação geral da turma e avaliação individual dos alunos">
+                            <img src="image/acadia-screenshot.png" alt="Painéis do AcadIA: avaliação geral da turma e avaliação individual dos alunos" loading="lazy" width="800" height="395">
                         </div>
                         <span class="hackathon-badge">Hackathon 2025</span>
                         <h3>AcadIA — Personalização Educacional com IA</h3>
@@ -262,11 +338,11 @@
                             <span class="tag">Python</span>
                             <span class="tag">Educação</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="featured-card plate">
+                    <article class="featured-card plate reveal">
                         <div class="featured-shot">
-                            <img src="image/valores-imobiliarios-pitch.png" alt="Slide de pitch do projeto Valores Imobiliários, equipe CTRL+ALT+DEFEAT">
+                            <img src="image/valores-imobiliarios-pitch.png" alt="Slide de pitch do projeto Valores Imobiliários, equipe CTRL+ALT+DEFEAT" loading="lazy" width="800" height="450">
                         </div>
                         <span class="hackathon-badge">Hackathon 2024</span>
                         <h3>CTRL + ALT + DEFEAT – Valores Imobiliários</h3>
@@ -282,14 +358,14 @@
                             <span class="tag">Python</span>
                             <span class="tag">Setor Público</span>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <span class="featured-tag">Outros projetos</span>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/cadastro.png" alt="Previsão de Nota de Crédito">
+                            <img src="image/cadastro.png" alt="Previsão de Nota de Crédito" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Previsão de Nota de Crédito</h3>
@@ -299,11 +375,11 @@
                                 <span class="tag">Machine Learning</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/churn.png" alt="Análise de Churn">
+                            <img src="image/churn.png" alt="Análise de Churn" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Análise de Churn</h3>
@@ -313,11 +389,11 @@
                                 <span class="tag">Pandas</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/web_scraping.png" alt="Web Scraping — Criptomoedas">
+                            <img src="image/web_scraping.png" alt="Web Scraping — Criptomoedas" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Web Scraping — Criptomoedas</h3>
@@ -327,11 +403,11 @@
                                 <span class="tag">Selenium</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/extracao_dados.png" alt="Extração de Dados — Filmes">
+                            <img src="image/extracao_dados.png" alt="Extração de Dados — Filmes" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Extração de Dados — Filmes</h3>
@@ -341,11 +417,11 @@
                                 <span class="tag">Web Scraping</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/automation.jpg" alt="Bot de Cadastro de Produtos">
+                            <img src="image/automation.jpg" alt="Bot de Cadastro de Produtos" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Bot de Cadastro de Produtos</h3>
@@ -356,11 +432,11 @@
                                 <span class="tag">RPA</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
+                    <article class="project-card reveal">
                         <div class="project-image">
-                            <img src="image/email-pdf-automation.png" alt="Automação de E-mails e PDFs">
+                            <img src="image/email-pdf-automation.jpg" alt="Automação de E-mails e PDFs" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>Automação de E-mails e PDFs</h3>
@@ -370,7 +446,7 @@
                                 <span class="tag">RPA</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -378,72 +454,84 @@
         <!-- Contato -->
         <section id="contato" class="contact">
             <div class="container">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="section-num">03</span>
                     <h2 class="section-title">Contato</h2>
                 </div>
                 <div class="contact-content">
-                    <div class="contact-info">
+                    <div class="contact-info reveal">
                         <h3>Vamos conversar</h3>
-                        <p>Estou aberto a oportunidades como Desenvolvedor(a) RPA Júnior ou Analista de Automação. Entre em contato por qualquer um dos canais abaixo.</p>
+                        <p>Estou aberto a oportunidades como Desenvolvedor(a) RPA Júnior ou Analista de Automação. Mande uma mensagem pelo formulário ou fale comigo por qualquer um dos canais abaixo.</p>
 
                         <div class="contact-items">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
+                            <a class="contact-item" href="mailto:arthursaraiva51@gmail.com">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <div>
                                     <h4>Email</h4>
-                                    <a href="mailto:arthursaraiva51@gmail.com">arthursaraiva51@gmail.com</a>
+                                    <span>arthursaraiva51@gmail.com</span>
                                 </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a class="contact-item" href="tel:+5511950330880">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                                 <div>
                                     <h4>Telefone</h4>
-                                    <a href="tel:+5511950330880">(11) 95033-0880</a>
+                                    <span>(11) 95033-0880</span>
                                 </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Localização</h4>
-                                    <p>Jundiaí, SP</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a class="contact-item" href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 <div>
                                     <h4>LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank">arthur-saraiva-ti</a>
+                                    <span>arthur-saraiva-ti</span>
                                 </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="contact-item" href="https://github.com/arthsz-ti" target="_blank" rel="noopener">
+                                <i class="fab fa-github" aria-hidden="true"></i>
                                 <div>
                                     <h4>GitHub</h4>
-                                    <a href="https://github.com/arthsz-ti" target="_blank">arthsz-ti</a>
+                                    <span>arthsz-ti</span>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <span>Jundiaí, SP</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <form id="contactForm" class="contact-form plate">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
+                    <form id="contactForm" class="contact-form plate reveal" novalidate>
+                        <div class="form-head">
+                            <h3>Envie uma mensagem</h3>
+                            <p>A mensagem chega direto no meu email.</p>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" autocomplete="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@empresa.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Ex.: Vaga de Desenvolvedor RPA" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre a oportunidade ou o projeto" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                        <!-- campo invisível anti-spam -->
+                        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-label">Enviar mensagem</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
@@ -452,11 +540,12 @@
 
     <footer>
         <div class="container footer-content">
-            <p>© 2026 Arthur Saraiva</p>
+            <p>© <span id="year">2026</span> Arthur Saraiva · Jundiaí, SP</p>
             <div class="footer-social">
-                <a href="https://github.com/arthsz-ti" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/arthsz-ti" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arthur-saraiva-ti" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:arthursaraiva51@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#home" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
     </footer>
