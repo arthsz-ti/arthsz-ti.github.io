@@ -1141,6 +1141,16 @@ footer {
     .nav-menu.active { transform: translateY(0); box-shadow: 0 12px 24px rgba(15, 36, 56, 0.1); }
     .nav-cta-item { padding-top: 0.25rem; }
     .nav-menu { gap: 1.1rem; }
+    .hamburger { padding: 13px 10px; margin-right: -10px; }
+    .project-link { padding: 0.7rem 0 0.35rem; margin-top: 0.4rem; }
+    .featured-card { padding: 1.4rem; }
+    .pro-card, .repo-card, .project-card { padding: 1.4rem; }
+    .project-image { margin: -1.4rem -1.4rem 1.1rem; }
+    .course-card { padding: 0.85rem 1rem; }
+    .section-head { margin-bottom: 2rem; }
+    .hero-facts { margin-top: 2.5rem; }
+    .repo-heading { margin-top: 3rem; }
+    .featured-grid, .pro-grid { margin-bottom: 3.5rem; }
     .hero { padding-top: calc(68px + 2rem); }
     .hero-buttons { flex-direction: column; width: 100%; }
     .hero-buttons .btn { justify-content: center; }
@@ -1152,7 +1162,7 @@ footer {
     .languages li { flex-direction: row; justify-content: space-between; align-items: baseline; }
     .fact { padding: 0.9rem 1rem; }
     .hamburger { display: flex; }
-    section { padding: 4.5rem 0; }
+    section { padding: 3.75rem 0; }
     .projects-grid { grid-template-columns: 1fr; }
     .courses-grid { grid-template-columns: 1fr; }
     .repo-grid { grid-template-columns: 1fr; }
