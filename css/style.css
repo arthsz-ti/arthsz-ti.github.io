@@ -895,6 +895,39 @@ footer {
 .pro-card ul li::before { content: "–"; position: absolute; left: 0; color: var(--accent); }
 .pro-card .project-tags { margin-top: auto; padding-top: 0.25rem; }
 
+/* ---------- Portfólio: mais projetos no GitHub ---------- */
+.repo-heading { margin-top: 4rem; }
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--line-strong);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.repo-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 26px rgba(15, 36, 56, 0.09);
+}
+.repo-icon {
+    width: 40px; height: 40px;
+    display: grid; place-items: center;
+    border: 1px solid var(--line-strong);
+    background: var(--paper);
+    color: var(--accent);
+}
+.repo-card h3 { font-family: var(--sans); font-weight: 700; font-size: 1rem; }
+.repo-card p { color: var(--ink-dim); font-size: 0.94rem; }
+.repo-card .project-tags { margin-top: auto; }
+.repo-card .project-link { margin-top: 0.4rem; }
+
 /* ---------- Cursos: ver todos ---------- */
 .courses-more { margin-top: 1rem; }
 .courses-more summary {
@@ -1081,6 +1114,7 @@ footer {
     .experience-education { grid-template-columns: 1fr; }
     .featured-grid { grid-template-columns: 1fr; }
     .pro-grid { grid-template-columns: 1fr; }
+    .repo-grid { grid-template-columns: repeat(2, 1fr); }
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-content { grid-template-columns: 1fr; }
     .courses-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1121,5 +1155,6 @@ footer {
     section { padding: 4.5rem 0; }
     .projects-grid { grid-template-columns: 1fr; }
     .courses-grid { grid-template-columns: 1fr; }
+    .repo-grid { grid-template-columns: 1fr; }
     .container { padding: 0 1.25rem; }
 }
